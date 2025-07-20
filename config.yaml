@@ -1,0 +1,19 @@
+webhook_url: "https://discord.com/api/webhooks/YOUR-WEBHOOK-HERE"
+poll_interval: 60
+state_file: "~/.config/netwatch/known_devices.json"
+interface: eth0
+oui_file: "oui.txt"
+
+always_alert:
+  macs:
+    - fe:cc:18:b5:f7:f1  # Jiblet’s iPhone
+    - f0:d1:a9:88:77:66  # Pixel 7 Pro
+
+suppress_flap:
+  vendors:
+    - Espressif Inc.
+    - Tuya Smart Inc.
+    - Chengdu Meross Technology Co., Ltd.
+    - Nest Labs Inc.
+  hostnames:
+    - shellyplu
